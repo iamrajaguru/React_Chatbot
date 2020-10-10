@@ -1,9 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import ActionProvider from "./Chatmodule/ActionProvider";
-import MessageParser from "./Chatmodule/MessageParser";
-import config from "./Chatmodule/config";
+import ActionProvider from "./Components/ActionProvider";
+import MessageParser from "./Components/MessageParser";
+import config from "./Components/config";
 import Chatbot from "react-chatbot-kit";
 function App() {
   return (
