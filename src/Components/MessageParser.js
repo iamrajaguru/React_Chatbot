@@ -5,8 +5,8 @@ class MessageParser {
 
   parse(message) {
     const lowerCaseMessage = message.toLowerCase();
-    if (lowerCaseMessage.includes("appointment")) {
-      this.actionProvider.updateAppointment();
+    if (lowerCaseMessage.includes(message.toLowerCase())) {
+      this.actionProvider.updateAppointment(lowerCaseMessage);
     }
   }
 }

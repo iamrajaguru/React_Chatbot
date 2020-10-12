@@ -16,11 +16,11 @@ class ActionProvider {
     }));
   }
 
-  async updateAppointment() {
+  async updateAppointment(message) {
     try {
       const response = await axios.post(
         "https://4pjz1fqnp5.execute-api.ap-south-1.amazonaws.com/POC/SecurraAssistAutoCompleteFAQFulfilment",
-        { type: "Search", value: "appointment" }
+        { type: "Search", value: message }
       );
       const messages = this.createChatBotMessage("Appointment ?", {
         widget: "appointment",
